@@ -9,10 +9,10 @@ RUN \
   `# Install yum-utils (provides yum-config-manager) + some basic web-related tools...` \
   yum install -y yum-utils wget patch mysql tar bzip2 unzip openssh-clients rsync make && \
 
-  `# Install PHP 5.5` \
+  `# Install PHP 5.4` \
   rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm && \
   yum-config-manager -q --enable remi && \
-  yum-config-manager -q --enable remi-php55 && \
+  yum-config-manager -q --enable remi-php54 && \
   yum install -y php-fpm php-bcmath php-cli php-gd php-intl php-mbstring \
                   php-mcrypt php-mysql php-opcache php-pdo && \
   yum install -y --disablerepo=epel php-pecl-redis php-pecl-yaml && \
