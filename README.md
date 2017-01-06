@@ -1,5 +1,5 @@
-# PHP in A Docker
-[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-php/10.0.svg)](https://circleci.com/gh/pozgo/docker-php/tree/latest)
+# PHP in a Docker
+[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-php.svg)](https://circleci.com/gh/pozgo/docker-php/tree/latest)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-php.svg)](https://github.com/pozgo/docker-php/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/pozgo/docker-php.svg)](https://github.com/pozgo/docker-php)
 [![GitHub Forks](https://img.shields.io/github/forks/pozgo/docker-php.svg)](https://github.com/pozgo/docker-php)  

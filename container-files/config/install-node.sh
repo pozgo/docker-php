@@ -1,10 +1,9 @@
 #!/bin/bash
 
-NODE_VERSION="v0.12.5"
-NPM_VERSION="v2.12.0"
+NODE_VERSION="v6.9.4"
 
 echo "=============================================================="
-echo "Installing Node.JS ${NODE_VERSION} and npm ${NPM_VERSION}...  "
+echo "Installing Node.JS ${NODE_VERSION}...  "
 echo "=============================================================="
 
 cd /tmp
@@ -15,8 +14,5 @@ cd node-$NODE_VERSION
 ./configure
 make && make install
 
-# Update NPM version
-npm update -g npm@$NPM_VERSION
-
 rm -rf /tmp/{node,npm}*  && cd /tmp
-echo && echo "Node.JS ${NODE_VERSION} and npm ${NPM_VERSION} installed." && echo
+echo && echo "Node.JS ${NODE_VERSION} installed." && echo
