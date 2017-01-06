@@ -9,28 +9,29 @@ RUN \
   `# Install yum-utils (provides yum-config-manager) + some basic web-related tools...` \
   yum install -y yum-utils wget patch mysql tar bzip2 unzip openssh-clients rsync make && \
 
-  `# Install PHP 5.6` \
+  `# Install PHP 5.5` \
   rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm && \
   yum-config-manager -q --enable remi && \
-  yum-config-manager -q --enable remi-php56 && \
+  yum-config-manager -q --enable remi-php55 && \
   yum install -y php-fpm php-bcmath php-cli php-gd php-intl php-mbstring \
-                  php-pecl-imagick php-mcrypt php-mysql php-opcache php-pdo && \
+                  php-mcrypt php-mysql php-opcache php-pdo && \
   yum install -y --disablerepo=epel php-pecl-redis php-pecl-yaml && \
 
-  `# Install libs required to build some gem/npm packages (e.g. PhantomJS requires zlib-devel, libpng-devel)` \
+  `# Install common tools needed/useful during Web App development` \
+  yum install -y git-core patch mysql tar bzip2 unzip wget GraphicsMagick && \
+  `# Install Ruby 2 and NodeJS + some libs required by npm packages (PhantomJS requires zlib-devel, libpng-devel)` \
   yum install -y ImageMagick GraphicsMagick gcc gcc-c++ libffi-devel libpng-devel zlib-devel && \
 
-  `# Install common tools needed/useful during Web App development` \
-
   `# Install Ruby 2` \
-  yum install -y ruby ruby-devel && \
+   yum install -y ruby ruby-devel && \
 
   `# Install/compile other software (Git, NodeJS)` \
   source /config/install.sh && \
 
   yum clean all && rm -rf /tmp/yum* && \
 
-  `# Install common npm packages: grunt, gulp, bower, browser-sync` \
+  `# Update npm and install common npm packages: grunt, gulp, bower, browser-sync` \
+  npm update -g npm && \
   npm install -g gulp grunt-cli bower browser-sync && \
 
   `# Update RubyGems, install Bundler` \
