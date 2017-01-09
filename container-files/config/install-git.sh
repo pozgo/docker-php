@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_VERSION="2.4.5"
+GIT_VERSION="2.11.0"
 
 echo "=============================================================="
 echo "Installing Git ${GIT_VERSION}...                              "

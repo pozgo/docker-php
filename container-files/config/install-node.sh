@@ -1,9 +1,9 @@
 #!/bin/bash
 
-NODE_VERSION="v6.9.4"
+NODE_VERSION="v7.4.0"
 
 echo "=============================================================="
-echo "Installing Node.JS ${NODE_VERSION}...  "
+echo "Installing Node.JS ${NODE_VERSION}..."
 echo "=============================================================="
 
 cd /tmp

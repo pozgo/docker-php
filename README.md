@@ -14,11 +14,12 @@ This is PHP [polinux/php](https://registry.hub.docker.com/u/polinux/php/) Docker
 For different PHP versions, look up different branches of this repository.
 On Docker Hub you can find them under different tags:
 
-* `polinux/php:latest` - PHP 7.0 built from master branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
+* `polinux/php:latest` - PHP 7.1 built from master branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
 * `polinux/php:5.4` - PHP 5.4 built from 5.4 branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php/tree/5.4.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
 * `polinux/php:5.5` - PHP 5.5 built from 5.5 branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php/tree/5.5.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
 * `polinux/php:5.6` - PHP 5.6 built from 5.6 branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php/tree/5.6.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
 * `polinux/php:7.0` - PHP 7.0 built from 7.0 branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php/tree/7.0.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
+* `polinux/php:7.1` - PHP 7.1 built from 7.1 branch [![Circle CI](https://circleci.com/gh/pozgo/docker-php/tree/7.1.svg?style=svg)](https://circleci.com/gh/pozgo/docker-php)
 
 #### Common dev tools for web app development
 
