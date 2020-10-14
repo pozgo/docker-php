@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 MAINTAINER Przemyslaw Ozgo <linux@ozgo.info>
 
 COPY container-files/config/install* /config/
